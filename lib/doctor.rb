@@ -20,6 +20,7 @@ attr_accessor :name
     Appointment.all.select do |appointment| 
      appointment.doctor == self
   end 
+end
   
   def patients 
     appointments.map do |appointment|
